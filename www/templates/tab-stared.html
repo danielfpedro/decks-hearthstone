@@ -1,0 +1,17 @@
+<ion-view view-title="Favoritos">
+  <ion-content>
+    <ion-list>
+      <span ng-repeat="(group, decksFromGroup) in decks">
+        <ion-item class="item-divider">
+          {{group}}
+        </ion-item>
+        <a class="item item-avatar" ng-repeat="deck in decksFromGroup" href="#/tab/stared/deck">
+          <img src="img/warrior_icon.png">
+                    <span class="item-note">Legend</span>
+          <h2>{{deck.name}}</h2>
+          <p>brm, tgt</p>
+        </a>
+      </span>
+    </ion-list>
+  </ion-content>
+</ion-view>

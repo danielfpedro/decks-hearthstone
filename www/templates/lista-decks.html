@@ -1,0 +1,21 @@
+<ion-view view-title="Decks">
+  <ion-content>
+    <ion-list>
+      <span ng-repeat="(group, decksFromGroup) in decks">
+        <ion-item class="item-divider">
+        	{{group}}
+        </ion-item>
+        <ion-item
+          class="item-avatar"
+          ng-repeat="deck in decksFromGroup"
+          href="#/tab/deck">
+          <img src="img/warrior_icon.png">
+            <span class="item-note">Legend</span>
+        	<h2>{{deck.name}} <span class="icon ion-heart"></span></h2>
+          <p>brm, tgt</p>
+          <ion-option-button class="button-positive" ng-click="addStar()">Star</ion-option-button>
+        </ion-item>
+      </span>
+    </ion-list>
+  </ion-content>
+</ion-view>

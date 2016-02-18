@@ -1,0 +1,14 @@
+<ion-view view-title="{{deck.name}}">
+	<ion-nav-buttons side="right">
+		<button
+			class="button button-icon icon ion-ios-more"
+			ng-click="openModal()">
+		</button>
+	</ion-nav-buttons>
+  <ion-content>
+  	<span ng-repeat="(title, desc) in deck.desc">
+  		<h4>{{title}}</h4>
+  		<p compile-html="desc"></p>
+  	</span>
+  </ion-content>
+</ion-view>

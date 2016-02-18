@@ -1,0 +1,17 @@
+<ion-modal-view>
+	<ion-header-bar>
+		<h1 class="title">Lista</h1>
+		<button
+			class="button button-clear button-positive"
+			ng-click="closeModal()">
+			Fechar
+		</button>
+	</ion-header-bar>
+	<ion-content>
+		<ion-list>
+			<ion-item ng-repeat="card in list" ng-click="openCardModal()">
+				{{card.name}}
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-modal-view>

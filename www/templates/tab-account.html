@@ -1,0 +1,17 @@
+<ion-view view-title="Account">
+  <ion-content>
+  	<div ng-if="authData">
+  		<ion-list>
+  			<ion-item>
+  				Configurações de conta
+  			</ion-item>
+  			<ion-item>
+  				Sair
+  			</ion-item>
+  		</ion-list>
+  	</div>
+  	<div ng-if="!authData">
+  		<button type="button" ng-click="doLogin()">Facebook</button>
+  	</div>
+  </ion-content>
+</ion-view>
